@@ -1,13 +1,13 @@
+import { Loading } from "../components/loading/Loading";
+import { Header } from "../components/header/Header";
 import { usePokemon } from "../hooks/usePokemon";
 
 export const Home = () => {
-	usePokemon();
+	const { isLoading, pokemons } = usePokemon();
 
 	return (
 		<div>
-			<h1>Listado de Pokemones</h1>
-
-			<hr />
+			<Header />
 
 			<table>
 				<thead>
@@ -17,7 +17,21 @@ export const Home = () => {
 						<td>Imagen</td>
 					</tr>
 				</thead>
+
+				<tbody>
+					{pokemons.map(({ id, name, imgURL }) => (
+						<tr key={id}>
+							<td>{id}</td>
+							<td>{name}</td>
+							<td>
+								<img src={imgURL} alt={name} width="100" />
+							</td>
+						</tr>
+					))}
+				</tbody>
 			</table>
+
+			{isLoading && <Loading />}
 		</div>
 	);
 };

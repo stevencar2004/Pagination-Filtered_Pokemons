@@ -13,14 +13,14 @@ export const FetchAllPokemons = async (): Promise<IPokemon[]> => {
 // Trasnformamos nuestra respuesta para poderla aprovechar de una mejor manera
 const transformPokemonToPokemonArray = (pokemonList: ISmallPokemon[]): IPokemon[] => {
 	const pokeArray: IPokemon[] = pokemonList.map((poke) => {
-		const id = poke.url;
-		const name = poke.name;
+		const urlArray = poke.url.split("/");
+		const id = urlArray[6];
 		const imgURL = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
 
 		return {
 			id,
 			imgURL,
-			name,
+			name: poke.name,
 		};
 	});
 
