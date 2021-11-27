@@ -4,8 +4,8 @@ This page shows us all the Pokémon that currently exist, these are obtained fro
 
 ## Technologies used
 - Html
-- Css composts
-- React js
+- Css components
+- React js - (Axios, Hooks, Context)
 - Typescript
 - Bootstrap
 - Git / Github
