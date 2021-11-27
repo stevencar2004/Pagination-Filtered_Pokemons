@@ -11,8 +11,16 @@ This page shows us all the Pokémon that currently exist, these are obtained fro
 - Git / Github
 
 
-List presentation, 15 pokemon per page
+### List presentation, 15 pokemon per page
+
 ![Foto](https://user-images.githubusercontent.com/66984715/143669524-6d4340a5-fc75-4875-b15a-138bf15ddd48.jpeg)
 
-Grid presentation, 5 pokemon per page
+###Grid presentation, 5 pokemon per page
+
 ![Foto](https://user-images.githubusercontent.com/66984715/143669517-0b7a10bb-e81a-4022-97a4-ab52eae361e2.jpeg)
+
+***
+
+*It is currently in its version 1.0*
+
+***
